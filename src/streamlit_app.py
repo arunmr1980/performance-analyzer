@@ -8,7 +8,7 @@ with left_column:
 if json_file is not None:
     json_string = json_file.read()
     print("Reading json file")
-    json_string = '{ "data" : ' + json_string + '}'
+    json_string = "{ \"data\" : " + json_string + "}"
     print (json_string)
 
     with left_column:

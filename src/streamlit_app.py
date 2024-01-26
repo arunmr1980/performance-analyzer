@@ -5,9 +5,9 @@ left_column, right_column = st.columns(2)
 with left_column:
     json_file = st.file_uploader("Upload the performance JSON")
 
-if xml_file is not None:
+if json_file is not None:
     json_string = json_file.read()
-    print("Reading xml file")
+    print("Reading json file")
 
     with left_column:
         st.json(json_string)
